@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&display=swap');
+@import "./variables";
+@import "./mixins";
+@import "./base";
+
+@import "./front";
+@import "./back";
+
+.wrapper {
+  width: 100%;
+  max-height: 100vh;
+}
+
+.content {
+  position: relative;
+  @include sizeBox(1440px, 100vh)
+}
+
+@media screen and (max-width: 1550px) {
+  .form__content{
+    @include posAbsoluteTL(99px, 233px);
+    @include sizeBox(460px, 526px);
+    &-inner {
+      h1 {
+        padding-top: 62px;
+      }
+  
+      h2 {
+        
+        padding-top: 30px;
+      }
+  }
+}
+
+  .form__back{
+    @include posAbsoluteTL(50px, 617px);
+    font-size: 62.5%;
+    @include sizeBox(480px, 615px);
+    .ball {
+      position: absolute;
+      left: 20%;
+      right: 0%;
+      bottom: 0%;
+    }
+    
+    .ball1 {
+      position: absolute;
+      left: 0%;
+      right: 5%;
+      bottom: 20%;
+     
+    }
+    
+    .ball2 {
+      position: absolute;
+      left: 0%;
+      right: -5%;
+      top: 21%;
+      bottom: 0%;
+     
+    }
+    
+    .ball3 {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+    }
+  }
+}
+
+
+
+

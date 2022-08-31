@@ -1,0 +1,100 @@
+.form__content {
+    @include bgc(rgba(255, 255, 255, 0.8));
+    @include sizeBox(510px, 626px);
+    @include posAbsoluteTL(199px, 233px);
+    border-radius: 24px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+  
+    &-inner {
+      h1 {
+        padding-top: 112px;
+        color: #1F497D;
+        font-size: 80px;
+      }
+  
+      h2 {
+        font-family: 'Lexend', sans-serif;
+        color: #FFC468;
+        font-weight: 700px;
+        padding-top: 40px;
+      }
+  
+      .inline {
+        padding-top: 40px;
+        padding-bottom: 35px;
+  
+      }
+  
+      a {
+        font-family: 'Lexend', sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 300;
+        color: #1c1c1c;
+  
+      }
+  
+      .btn__signin {
+        margin-top: 48px;
+        text-transform: uppercase;
+        font-family: 'Lexend', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        background-color: #1F497D;
+        text-align: center;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        @include sizeBox(194px, 42px)
+      }
+    }
+  }
+  
+  .field-signin1 {
+    @include sizeBox(350px, 36px);
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+  
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: #E0E0E0;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 300;
+      line-height: 20px;
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+  
+  .field-signin2 {
+    @include sizeBox(350px, 36px);
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    margin-top: 23px;
+  
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: #E0E0E0;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 300;
+      line-height: 20px;
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
