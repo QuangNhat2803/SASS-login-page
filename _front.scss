@@ -1,7 +1,8 @@
 .form {
   &__content {
-    @include bgc(rgba(255, 255, 255, 0.8));
     @include sizeBox(510px, 626px);
+    @include bgc(rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(24px);
     mix-blend-mode: normal;
     // @include posAbsoluteTL(199px, 233px);
     // @include absoluteCenter("both");
@@ -41,6 +42,7 @@
         font-size: 12px;
         line-height: 15px;
         font-weight: 300;
+        font-style: normal;
         color: #1c1c1c;
 
       }

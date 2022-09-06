@@ -8,3 +8,13 @@
     @include bgc(#F7DCDC);
     max-width: 1920px;
   }
+
+  .wrapper {
+    width: 100%;
+    max-height: 100vh;
+  }
+  
+  .content {
+    position: relative;
+    @include sizeBox(100%, 100vh);
+  }
