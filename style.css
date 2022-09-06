@@ -14,6 +14,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   width: 510px;
   height: 626px;
+  mix-blend-mode: normal;
   position: absolute;
   top: 50%;
   left: calc(50% - 233px);
@@ -25,8 +26,11 @@ body {
   text-align: center;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
 }
+.form__content-inner {
+  margin: 0 80px 0 80px;
+}
 .form__content-inner #logo {
-  margin-top: 112px;
+  margin-top: 112.5px;
   color: #1F497D;
   font-size: 80px;
 }
@@ -49,6 +53,7 @@ body {
 }
 .form__content-inner .btn__signin {
   margin-top: 48px;
+  margin-bottom: 112.5px;
   text-transform: uppercase;
   font-family: "Lexend", sans-serif;
   font-weight: 500;
@@ -112,6 +117,7 @@ body {
   right: 16px;
   top: 4.23%;
   bottom: 4.13%;
+  cursor: pointer;
 }
 
 .form__back {
@@ -198,6 +204,313 @@ body {
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .form__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+    height: 526px;
+    left: calc(50% - 183px);
+    padding-bottom: 56px;
+  }
+  .form__content-inner #logo {
+    margin-top: 70px;
+  }
+  .form__content-inner h2 {
+    padding-top: 30px;
+  }
+  .form__back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    left: calc(50% + 195px);
+    font-size: 62.5%;
+    background-color: #F8E6F6;
+    width: 480px;
+    height: 615px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    background-image: url("./img/shape.png");
+    background-size: cover;
+  }
+  .form__back-inner {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+    color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__back-inner h1 {
+    width: 370px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42.5px;
+    letter-spacing: 0.25;
+  }
+  .form__back-inner h2 {
+    width: 370px;
+    height: 25px;
+    padding-top: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.15;
+  }
+  .form__back .ball {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+  .form__back .ball1 {
+    position: absolute;
+    left: 0%;
+    right: 5%;
+    bottom: 25%;
+  }
+  .form__back .ball2 {
+    position: absolute;
+    left: 0%;
+    right: 15%;
+    top: 18%;
+    bottom: 0%;
+  }
+  .form__back .ball3 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    height: 100vh;
+  }
+  .form__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80%;
+    width: 90%;
+  }
+  .form__content-inner {
+    margin: 0 40px 0 40px;
+  }
+  .form__content-inner #logo {
+    width: 150px;
+    margin-top: 40px;
+    color: #1F497D;
+    font-size: 80px;
+  }
+  .form__content .inline {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  .form__content a {
+    font-family: "Lexend", sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 300;
+    color: #1c1c1c;
+    text-align: center;
+  }
+  .form__content .btn__signin {
+    margin-top: 48px;
+    margin-bottom: 112.5px;
+    text-transform: uppercase;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #1F497D;
+    text-align: center;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 194px;
+    height: 42px;
+  }
+  .form__content .field-signin1 {
+    width: 200px;
+    height: 36px;
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 17.33px;
+  }
+  .form__content .field-signin1 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #E0E0E0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 16px;
+    padding-left: 9.33px;
+  }
+  .form__content .field-signin2 {
+    width: 200px;
+    height: 36px;
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 17.33px;
+    margin-top: 23px;
+  }
+  .form__content .field-signin2 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #E0E0E0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 16px;
+    padding-left: 9.33px;
+  }
+  .form__back {
+    display: none;
+  }
+}
+@media screen and (max-width: 820px) {
+  .content {
+    height: 100vh;
+  }
+  .form__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80%;
+    width: 60%;
+  }
+  .form__content-inner {
+    margin: 0 40px 0 40px;
+  }
+  .form__content-inner #logo {
+    width: 150px;
+    margin-top: 40px;
+    color: #1F497D;
+    font-size: 80px;
+  }
+  .form__content .inline {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  .form__content a {
+    font-family: "Lexend", sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 300;
+    color: #1c1c1c;
+    text-align: center;
+  }
+  .form__content .btn__signin {
+    margin-top: 48px;
+    margin-bottom: 112.5px;
+    text-transform: uppercase;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #1F497D;
+    text-align: center;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 194px;
+    height: 42px;
+  }
+  .form__content .field-signin1 {
+    width: 200px;
+    height: 36px;
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 17.33px;
+  }
+  .form__content .field-signin1 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #E0E0E0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 16px;
+    padding-left: 9.33px;
+  }
+  .form__content .field-signin2 {
+    width: 200px;
+    height: 36px;
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 17.33px;
+    margin-top: 23px;
+  }
+  .form__content .field-signin2 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #E0E0E0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 16px;
+    padding-left: 9.33px;
+  }
+  .form__back {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80%;
+    width: 60%;
+  }
+  .form__back-inner {
+    padding: 130px 0px 0px 0px;
+    color: #1c1c1c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .form__back-inner h1 {
+    display: block;
+  }
+  .form__back-inner h2 {
+    display: none;
+  }
+  .form__back .ball, .form__back .ball1, .form__back .ball2, .form__back .ball3 {
+    display: none;
+  }
+}
 .wrapper {
   width: 100%;
   max-height: 100vh;

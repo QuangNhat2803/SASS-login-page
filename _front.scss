@@ -2,6 +2,7 @@
   &__content {
     @include bgc(rgba(255, 255, 255, 0.8));
     @include sizeBox(510px, 626px);
+    mix-blend-mode: normal;
     // @include posAbsoluteTL(199px, 233px);
     // @include absoluteCenter("both");
     position: absolute;
@@ -16,8 +17,9 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
 
     &-inner {
+      margin: 0 80px 0 80px;
       #logo {
-        margin-top: 112px;
+        margin-top: 112.5px;
         color: #1F497D;
         font-size: 80px;
       }
@@ -32,7 +34,6 @@
       .inline {
         padding-top: 40px;
         padding-bottom: 35px;
-
       }
 
       a {
@@ -46,6 +47,7 @@
 
       .btn__signin {
         margin-top: 48px;
+        margin-bottom: 112.5px;
         text-transform: uppercase;
         font-family: 'Lexend', sans-serif;
         font-weight: 500;
@@ -95,8 +97,6 @@
       padding-left: 17.33px;
       margin-top: 23px;
 
-
-
       input {
         width: 100%;
         border: none;
@@ -111,11 +111,10 @@
 
       .icon-eye {
         position: relative;
-       
         right: 16px;
         top: 4.23%;
         bottom: 4.13%;
-        
+        cursor: pointer;
       }
     }
   }
