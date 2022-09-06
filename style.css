@@ -15,8 +15,9 @@ body {
   width: 510px;
   height: 626px;
   position: absolute;
-  top: 199px;
-  left: 233px;
+  top: 50%;
+  left: calc(50% - 233px);
+  transform: translate(-50%, -50%);
   border-radius: 24px;
   z-index: 1;
   display: flex;
@@ -24,8 +25,8 @@ body {
   text-align: center;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
 }
-.form__content-inner h1 {
-  padding-top: 112px;
+.form__content-inner #logo {
+  margin-top: 112px;
   color: #1F497D;
   font-size: 80px;
 }
@@ -51,6 +52,9 @@ body {
   text-transform: uppercase;
   font-family: "Lexend", sans-serif;
   font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
   color: #fff;
   background-color: #1F497D;
   text-align: center;
@@ -60,8 +64,7 @@ body {
   width: 194px;
   height: 42px;
 }
-
-.field-signin1 {
+.form__content .field-signin1 {
   width: 350px;
   height: 36px;
   background-color: #E0E0E0;
@@ -69,9 +72,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 17.33px;
 }
-.field-signin1 input {
+.form__content .field-signin1 input {
   width: 100%;
   border: none;
   outline: none;
@@ -80,10 +83,9 @@ body {
   font-weight: 300;
   line-height: 20px;
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 9.33px;
 }
-
-.field-signin2 {
+.form__content .field-signin2 {
   width: 350px;
   height: 36px;
   background-color: #E0E0E0;
@@ -91,10 +93,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 17.33px;
   margin-top: 23px;
 }
-.field-signin2 input {
+.form__content .field-signin2 input {
   width: 100%;
   border: none;
   outline: none;
@@ -103,27 +105,35 @@ body {
   font-weight: 300;
   line-height: 20px;
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 9.33px;
+}
+.form__content .field-signin2 .icon-eye {
+  position: relative;
+  right: 16px;
+  top: 4.23%;
+  bottom: 4.13%;
 }
 
 .form__back {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 195px);
+  transform: translate(-50%, -50%);
   background-color: #F8E6F6;
   width: 590px;
   height: 725px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
-  position: absolute;
-  top: 150px;
-  left: 617px;
   font-family: "Lexend", sans-serif;
   text-align: center;
   background-image: url("./img/shape.png");
 }
 .form__back-inner {
+  position: relative;
+  z-index: 99;
   width: 100%;
   height: 100%;
-  padding-left: 30px;
+  padding-left: 60px;
   color: #1C1C1C;
   display: flex;
   flex-direction: column;
@@ -133,7 +143,7 @@ body {
 .form__back-inner h1 {
   width: 370px;
   height: 43px;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 34px;
   line-height: 42.5px;
   letter-spacing: 0.25;
@@ -147,43 +157,47 @@ body {
   line-height: 25px;
   letter-spacing: 0.15;
 }
-
-.ball {
+.form__back .ball {
   position: absolute;
   left: 0%;
   right: 0%;
   bottom: 0%;
-  animation: ball 3s linear alternate infinite;
+  -webkit-animation: ball 3s linear alternate infinite;
+          animation: ball 3s linear alternate infinite;
 }
-
-.ball1 {
+.form__back .ball1 {
   position: absolute;
   left: 0%;
   right: 10%;
   bottom: 30%;
-  animation: ball 2.5s linear alternate infinite;
+  -webkit-animation: ball 2.5s linear alternate infinite;
+          animation: ball 2.5s linear alternate infinite;
 }
-
-.ball2 {
+.form__back .ball2 {
   position: absolute;
   left: 0%;
   right: 15%;
   top: 18%;
   bottom: 0%;
 }
-
-.ball3 {
+.form__back .ball3 {
   position: absolute;
   right: 0%;
   bottom: 0%;
-  animation: ball 2.5s linear alternate infinite;
+  -webkit-animation: ball 2.5s linear alternate infinite;
+          animation: ball 2.5s linear alternate infinite;
 }
-
+@-webkit-keyframes ball {
+  to {
+    transform: translateY(10%);
+  }
+}
 @keyframes ball {
   to {
     transform: translateY(10%);
   }
 }
+
 .wrapper {
   width: 100%;
   max-height: 100vh;
@@ -191,56 +205,6 @@ body {
 
 .content {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 100vh;
-}
-
-@media screen and (max-width: 1550px) {
-  .form__content {
-    position: absolute;
-    top: 99px;
-    left: 233px;
-    width: 460px;
-    height: 526px;
-  }
-  .form__content-inner h1 {
-    padding-top: 62px;
-  }
-  .form__content-inner h2 {
-    padding-top: 30px;
-  }
-  .form__back {
-    position: absolute;
-    top: 50px;
-    left: 617px;
-    font-size: 62.5%;
-    width: 480px;
-    height: 615px;
-  }
-  .form__back .ball {
-    position: absolute;
-    left: 20%;
-    right: 0%;
-    bottom: 0%;
-  }
-  .form__back .ball1 {
-    position: absolute;
-    left: 0%;
-    right: 5%;
-    bottom: 20%;
-  }
-  .form__back .ball2 {
-    position: absolute;
-    left: 0%;
-    right: -5%;
-    top: 21%;
-    bottom: 0%;
-  }
-  .form__back .ball3 {
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

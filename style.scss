@@ -13,60 +13,62 @@
 
 .content {
   position: relative;
-  @include sizeBox(1440px, 100vh)
+  @include sizeBox(100%, 100vh);
 }
 
-@media screen and (max-width: 1550px) {
-  .form__content{
-    @include posAbsoluteTL(99px, 233px);
-    @include sizeBox(460px, 526px);
-    &-inner {
-      h1 {
-        padding-top: 62px;
-      }
+// @media screen and (max-width: 1550px) {
+//   .form__content{
+//     // @include posAbsoluteTL(99px, 233px);
+//     @include absoluteCenter("both");
+//     @include sizeBox(460px, 526px);
+//     &-inner {
+//       h1 {
+//         padding-top: 62px;
+//       }
   
-      h2 {
-        z-index: 1;
-        padding-top: 30px;
-      }
-  }
-}
+//       h2 {
+        
+//         padding-top: 30px;
+//       }
+//   }
+// }
 
-  .form__back{
-    @include posAbsoluteTL(50px, 617px);
-    font-size: 62.5%;
-    @include sizeBox(480px, 615px);
-    .ball {
-      position: absolute;
-      left: 20%;
-      right: 0%;
-      bottom: 0%;
-    }
+//   .form__back{
+//     // @include posAbsoluteTL(50px, 617px);
+//     @include absoluteCenter("both");
+//     font-size: 62.5%;
+//     @include sizeBox(480px, 615px);
+//     .ball {
+//       position: absolute;
+//       left: 20%;
+//       right: 0%;
+//       bottom: 0%;
+//     }
     
-    .ball1 {
-      position: absolute;
-      left: 0%;
-      right: 5%;
-      bottom: 20%;
+//     .ball1 {
+//       position: absolute;
+//       left: 0%;
+//       right: 5%;
+//       bottom: 20%;
      
-    }
+//     }
     
-    .ball2 {
-      position: absolute;
-      left: 0%;
-      right: -5%;
-      top: 21%;
-      bottom: 0%;
+//     .ball2 {
+//       position: absolute;
+//       left: 0%;
+//       right: -5%;
+//       top: 21%;
+//       bottom: 0%;
      
-    }
+//     }
     
-    .ball3 {
-      position: absolute;
-      right: 0%;
-      bottom: 0%;
-    }
-  }
-}
+//     .ball3 {
+//       position: absolute;
+//       right: 0%;
+//       bottom: 0%;
+//     }
+//   }
+// }
 
 
 
