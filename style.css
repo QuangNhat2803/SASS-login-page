@@ -10,11 +10,6 @@ body {
   max-width: 1920px;
 }
 
-.wrapper {
-  width: 100%;
-  max-height: 100vh;
-}
-
 .content {
   position: relative;
   width: 100%;
@@ -67,7 +62,6 @@ body {
 }
 .form__content-inner .btn__signin {
   margin-top: 48px;
-  margin-bottom: 112.5px;
   text-transform: uppercase;
   font-family: "Lexend", sans-serif;
   font-weight: 500;
@@ -114,6 +108,7 @@ body {
   align-items: center;
   padding-left: 17.33px;
   margin-top: 23px;
+  margin-bottom: 35px;
 }
 .form__content .field-signin2 input {
   width: 100%;
@@ -157,8 +152,9 @@ body {
   color: #1C1C1C;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 316.5px;
 }
 .form__back-inner h1 {
   width: 370px;
@@ -188,8 +184,8 @@ body {
 .form__back .ball1 {
   position: absolute;
   left: 0%;
-  right: 10%;
-  bottom: 30%;
+  right: 0%;
+  bottom: 33%;
   -webkit-animation: ball 2.5s linear alternate infinite;
           animation: ball 2.5s linear alternate infinite;
 }

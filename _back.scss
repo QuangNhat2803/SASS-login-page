@@ -24,8 +24,9 @@
       color: #1C1C1C;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      padding-top: 316.5px;
 
       h1 {
         width: 370px;
@@ -59,8 +60,8 @@
     .ball1 {
       position: absolute;
       left: 0%;
-      right: 10%;
-      bottom: 30%;
+      right: 0%;
+      bottom: 33%;
       animation: ball 2.5s linear alternate infinite;
     }
 
