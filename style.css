@@ -20,8 +20,8 @@ body {
   width: 510px;
   height: 626px;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(24px);
-          backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   mix-blend-mode: normal;
   position: absolute;
   top: 50%;
@@ -97,6 +97,7 @@ body {
   line-height: 20px;
   font-size: 16px;
   padding-left: 9.33px;
+  padding-right: 60px;
 }
 .form__content .field-signin2 {
   width: 350px;
@@ -120,6 +121,7 @@ body {
   line-height: 20px;
   font-size: 16px;
   padding-left: 9.33px;
+  padding-right: 45px;
 }
 .form__content .field-signin2 .icon-eye {
   position: relative;
@@ -152,21 +154,16 @@ body {
   color: #1C1C1C;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 316.5px;
 }
 .form__back-inner h1 {
-  width: 370px;
-  height: 43px;
   font-weight: bold;
   font-size: 34px;
   line-height: 42.5px;
   letter-spacing: 0.25;
 }
 .form__back-inner h2 {
-  width: 370px;
-  height: 25px;
   padding-top: 24px;
   font-weight: 400;
   font-size: 20px;
