@@ -66,7 +66,7 @@
 
 
     .field-signin1 {
-      @include sizeBox(350px, 36px);
+      @include sizeBox(100%, 36px);
       background-color: #E0E0E0;
       border-radius: 8px;
       display: flex;
@@ -89,7 +89,7 @@
     }
 
     .field-signin2 {
-      @include sizeBox(350px, 36px);
+      @include sizeBox(100%, 36px);
       background-color: #E0E0E0;
       border-radius: 8px;
       display: flex;
