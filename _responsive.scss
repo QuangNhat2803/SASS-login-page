@@ -110,94 +110,17 @@
            left: 50%;
            transform: translate(-50%,-50%);
            font-size: 80%;
-            width: 90%;
+            width: 80%;
+            
            
            &-inner {
             margin: 0 40px 0 40px;
-            #logo {
-              width: 150px;  
-              margin-top: 40px;
-              color: #1F497D;
-              font-size: 80px;
-             }
+            
             }
-            .inline {
-                padding-top: 40px;
-                padding-bottom: 35px;
-              }
-        
-              a {
-                font-family: 'Lexend', sans-serif;
-                font-size: 10px;
-                line-height: 15px;
-                font-weight: 300;
-                color: #1c1c1c;
-                text-align: center;
-              }
-        
-              .btn__signin {
-                margin-top: 48px;
-                margin-bottom: 112.5px;
-                text-transform: uppercase;
-                font-family: 'Lexend', sans-serif;
-                font-weight: 500;
-                font-style: normal;
-                font-size: 14px;
-                line-height: 18px;
-                color: #fff;
-                background-color: #1F497D;
-                text-align: center;
-                border: none;
-                border-radius: 24px;
-                cursor: pointer;
-                @include sizeBox(194px, 42px)
-              }
-              .field-signin1 {
-                @include sizeBox(200px, 36px);
-                background-color: #E0E0E0;
-                border-radius: 8px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                padding-left: 17.33px;
-          
-                input {
-                  width: 100%;
-                  border: none;
-                  outline: none;
-                  background-color: #E0E0E0;
-                  font-family: 'Lexend', sans-serif;
-                  font-weight: 300;
-                  line-height: 20px;
-                  font-size: 16px;
-                  padding-left: 9.33px;
-                }
-              }
-          
-              .field-signin2 {
-                @include sizeBox(200px, 36px);
-                background-color: #E0E0E0;
-                border-radius: 8px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                padding-left: 17.33px;
-                margin-top: 23px;
-          
-                input {
-                  width: 100%;
-                  border: none;
-                  outline: none;
-                  background-color: #E0E0E0;
-                  font-family: 'Lexend', sans-serif;
-                  font-weight: 300;
-                  line-height: 20px;
-                  font-size: 16px;
-                  padding-left: 9.33px;
-                }
+
+            .btn__signin{
+                margin-bottom: 70px;
             }
-        
-        
             
         }
 

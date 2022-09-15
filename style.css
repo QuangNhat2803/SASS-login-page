@@ -61,7 +61,7 @@ body {
   color: #1c1c1c;
 }
 .form__content-inner .btn__signin {
-  margin-top: 48px;
+  margin: 48px 0 112px 0;
   text-transform: uppercase;
   font-family: "Lexend", sans-serif;
   font-weight: 500;
@@ -89,15 +89,17 @@ body {
 }
 .form__content .field-signin1 input {
   width: 100%;
+  height: 100%;
   border: none;
   outline: none;
+  border-radius: 8px;
   background-color: #E0E0E0;
   font-family: "Lexend", sans-serif;
   font-weight: 300;
   line-height: 20px;
   font-size: 16px;
   padding-left: 9.33px;
-  padding-right: 60px;
+  padding-right: 16px;
 }
 .form__content .field-signin2 {
   width: 100%;
@@ -113,6 +115,7 @@ body {
 }
 .form__content .field-signin2 input {
   width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   background-color: #E0E0E0;
@@ -121,7 +124,7 @@ body {
   line-height: 20px;
   font-size: 16px;
   padding-left: 9.33px;
-  padding-right: 45px;
+  padding-right: 32px;
 }
 .form__content .field-signin2 .icon-eye {
   position: relative;
@@ -304,89 +307,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80%;
-    width: 90%;
+    width: 80%;
   }
   .form__content-inner {
     margin: 0 40px 0 40px;
   }
-  .form__content-inner #logo {
-    width: 150px;
-    margin-top: 40px;
-    color: #1F497D;
-    font-size: 80px;
-  }
-  .form__content .inline {
-    padding-top: 40px;
-    padding-bottom: 35px;
-  }
-  .form__content a {
-    font-family: "Lexend", sans-serif;
-    font-size: 10px;
-    line-height: 15px;
-    font-weight: 300;
-    color: #1c1c1c;
-    text-align: center;
-  }
   .form__content .btn__signin {
-    margin-top: 48px;
-    margin-bottom: 112.5px;
-    text-transform: uppercase;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-    background-color: #1F497D;
-    text-align: center;
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    width: 194px;
-    height: 42px;
-  }
-  .form__content .field-signin1 {
-    width: 200px;
-    height: 36px;
-    background-color: #E0E0E0;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 17.33px;
-  }
-  .form__content .field-signin1 input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background-color: #E0E0E0;
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
-    line-height: 20px;
-    font-size: 16px;
-    padding-left: 9.33px;
-  }
-  .form__content .field-signin2 {
-    width: 200px;
-    height: 36px;
-    background-color: #E0E0E0;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 17.33px;
-    margin-top: 23px;
-  }
-  .form__content .field-signin2 input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background-color: #E0E0E0;
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
-    line-height: 20px;
-    font-size: 16px;
-    padding-left: 9.33px;
+    margin-bottom: 70px;
   }
   .form__back {
     display: none;
